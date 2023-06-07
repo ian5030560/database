@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>顧客</title>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/v4-shims.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.css">
+    <link rel="stylesheet" href="https://www.bootstrapsite.com/includes/css/text.css">
+    <link rel="stylesheet" href="https://www.bootstrapsite.com/includes/classes/.obj.css">
+
+    <style></style>
+    <style></style>
+
+
+</head>
+
+<body>
+
+    <div id="section-1">
+        <div class="container my-3">
+            <form action="{{url_for('custom.customer')}}" method="post" class="mb-5">
+                <div class="mb-1">
+                    <select class="form-select form-select-sm" id="input-3" type="select" name = "city">
+                        <option class="text-muted" value="">縣市</option>
+                    </select></div>
+                <div class="mb-1">
+                    <select class="form-select form-select-sm" id="input-4" type="select" name = "store">
+                        <option class="text-muted" value="">店名</option>
+                    </select></div>
+                <div class="mb-1"><input type="text" class="form-control form-control-sm" id="input-2" placeholder="產品名稱" name = "product">
+                </div><button class="btn btn-primary w-100" type="summit">搜尋</button>
+            </form>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                {% for card in cards %}
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-header">Image #1</div>
+                            <div class="card-body">
+                                <div>
+                                    <p>價格:</p>
+                                    <p>庫存:</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
+
+
+
+</body>
+
+</html>
