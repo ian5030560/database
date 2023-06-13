@@ -1,4 +1,4 @@
-from database import cursor
+from db import cursor
 
 
 if __name__ == '__main__':
