@@ -11,6 +11,5 @@ if __name__ == '__main__':
     DESC LIMIT 1;
     """
     cursor.execute(ins)
-
-    data = cursor.fetchone()
-    print("uid: %s name: %s"%(data[0], data[1]))
+    
+    print("uid: %s name: %s"%(cursor.fetchone()[0], cursor.fetchone()[1]))
