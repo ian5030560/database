@@ -1,1 +1,1 @@
-from database.db import cursor
+from db import cursor
