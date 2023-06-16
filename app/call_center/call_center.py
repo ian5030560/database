@@ -1,6 +1,6 @@
 from db.db import cursor
 import tkinter as tk
-from database.app.customer.ui import App
+from ui import App
 
 
 def refresh(app: App):
