@@ -22,11 +22,11 @@ def search(app: App):
     if name and address:
         ins = "SELECT `name`, `address`, `phone` FROM online_customer WHERE `name` = '{}', `address` = '{}'".format(name, address)
     elif name:
-        ins = "SELECT `name`, `address`, `phone` FROM online_custom WHERE `name` = '{}'".format(name)
+        ins = "SELECT `name`, `address`, `phone` FROM online_customer WHERE `name` = '{}'".format(name)
     elif address:
-        ins = "SELECT `name`, `address`, `phone` FROM online_custom WHERE `address` = '{}'".format(address)
+        ins = "SELECT `name`, `address`, `phone` FROM online_customer WHERE `address` = '{}'".format(address)
     else:
-        ins = "SELECT `name`, `address`, `phone` FROM online_custom"
+        ins = "SELECT `name`, `address`, `phone` FROM online_customer"
         
     cursor.execute(ins)
     
