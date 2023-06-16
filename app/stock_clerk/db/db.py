@@ -5,6 +5,6 @@ __user = "411077016"
 __password = "411077016"
 __db = "411077016"
 
-__connect = sql.connect(host = __host, user = __user, password = __password, database = __db)
+connect = sql.connect(host = __host, user = __user, password = __password, database = __db)
 
-cursor = __connect.cursor()
+cursor = connect.cursor()

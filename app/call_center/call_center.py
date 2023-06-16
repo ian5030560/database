@@ -12,7 +12,7 @@ def display(app: App, dataSet: list):
     tree = app.infoView
     
     for data in dataSet:
-        tree.insert("", "end", data)
+        tree.insert("", "end", values = data)
 
 def search(app: App):
     refresh(app)
@@ -23,8 +23,11 @@ def search(app: App):
         ins = "SELECT `name`, `address`, `phone` FROM online_customer WHERE `name` = '{}', `address` = '{}'".format(name, address)
     elif name:
         ins = "SELECT `name`, `address`, `phone` FROM online_custom WHERE `name` = '{}'".format(name)
-    else:
+    elif address:
         ins = "SELECT `name`, `address`, `phone` FROM online_custom WHERE `address` = '{}'".format(address)
+    else:
+        ins = "SELECT `name`, `address`, `phone` FROM online_custom"
+        
     cursor.execute(ins)
     
     dataSet = cursor.fetchall()
