@@ -1,6 +1,6 @@
 <h1>query</h1>
 <li>1. Find the customer who has bought the most (by price) in the past year.</li>
-<div>![Untitled](https://github.com/ian5030560/database/assets/110732376/4de47dfd-1f42-4b2d-b709-1a341c6a04a0)</div>
+![Untitled](https://github.com/ian5030560/database/assets/110732376/d9dbb647-bd3f-4121-8789-ce785fa01258)
 <li>2. Find the top 2 products by dollar-amount sold in the past year.</li>
 ![Untitled (1)](https://github.com/ian5030560/database/assets/110732376/c946ba73-e549-4e1a-8a54-f4a7768914c9)
 <li>3. Find those products that are out-of-stock at every store in Kaohsiung.</li>
