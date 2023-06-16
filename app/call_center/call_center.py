@@ -19,7 +19,12 @@ def search(app: App):
     name = app.nameEntry.get()
     address = app.addressEntry.get()
     
-    ins = """""".format(name, address)
+    if name and address:
+        ins = "SELECT `name`, `address`, `phone` FROM online_customer WHERE `name` = '{}', `address` = '{}'".format(name, address)
+    elif name:
+        ins = "SELECT `name`, `address`, `phone` FROM online_custom WHERE `name` = '{}'".format(name)
+    else:
+        ins = "SELECT `name`, `address`, `phone` FROM online_custom WHERE `address` = '{}'".format(address)
     cursor.execute(ins)
     
     dataSet = cursor.fetchall()
