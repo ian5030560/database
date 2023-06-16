@@ -1,3 +1,5 @@
+<h1>ER圖</h1>
+<img src= "prepare/db/db ER-diagram.jpg">
 <h1>query</h1>
 <li>1. Find the customer who has bought the most (by price) in the past year.</li>
 <img src = "prepare/Untitled.png">
