@@ -1,5 +1,5 @@
 import tkinter as tk
-from ui import UI
+from database.app.customer.ui import UI
 
 if __name__ == "__main__":
     root = tk.Tk()
