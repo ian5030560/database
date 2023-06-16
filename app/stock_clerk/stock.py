@@ -31,7 +31,7 @@ def search(app: UI):
         "set_off": app.setOffEntry.get()
     }
     
-    display(db_search(condition))
+    display(app, db_search(condition))
 
 def select(app: UI):
 
