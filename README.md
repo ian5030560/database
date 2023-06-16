@@ -1,5 +1,7 @@
 <h1>ER圖</h1>
 <img src= "prepare/db/db ER-diagram.jpg">
+<h1>schema</h1>
+<a href = "https://github.com/ian5030560/database/blob/main/prepare/db/schema.sql">schema.sql</a>
 <h1>query</h1>
 <li>1. Find the customer who has bought the most (by price) in the past year.</li>
 <img src = "prepare/Untitled.png">
