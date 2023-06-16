@@ -3,16 +3,23 @@ import typing
 
 def db_search(condition: list) -> list:
     ins = "SELECT * FROM inventory WHERE "
+    
+    hasCondition = False
     for key in condition:
         value = condition[key]
         if value and not value.isspace():
+            hasCondition = True
             if value.isnumeric():
                 ins += "`{}` = {} AND ".format(key, value)
             else:
                 ins += "`{}` = '{}' AND ".format(key, value)
     
+    if not hasCondition:
+        ins = ins.replace("WHERE", "")
+        
     if ins.find("AND") != -1:
         ins = ins[: len(ins) - 5]
+        
     cursor.execute(ins)
     
     return cursor.fetchall()
