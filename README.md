@@ -14,9 +14,9 @@ Find the contact information for the customer. Also, find the contents of that s
 
 <h1>app</h1>
 <div>分別對顧客、客服人員、倉庫管理員所做的app</div>
-<li>顧客</li>
+<h3><li>顧客</li></h3>
 <img src = "prepare/customer.png">
-<li>客服人員</li>
+<h3><li>客服人員</li></h3>
 <img src = "prepare/image.png">
-<li>倉庫管理員</li>
+<h3><li>倉庫管理員</li></h3>
 <img src = "prepare/stock.png">
